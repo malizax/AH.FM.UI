@@ -10,41 +10,18 @@ import UIKit
 
 class MainView: UIViewController {
     
-    @IBOutlet weak var NowPlaying: UIView!
-      @IBOutlet weak var SongTitle: UILabel!
-      @IBOutlet weak var ArtistName: UILabel!
-    @IBOutlet weak var NavigationBar: UINavigationBar!
-      @IBOutlet weak var NavBarMenu: UIBarButtonItem!
-      @IBOutlet weak var NavBarSearch: UIBarButtonItem!
-    @IBOutlet weak var RadioShows: UIView!
-      @IBOutlet weak var SearchBar: UISearchBar!
     @IBOutlet weak var MenuPopover: UIView!
-      @IBOutlet weak var MenuRadioShows: UIButton!
-      @IBOutlet weak var MenuCalendar: UIButton!
-      @IBOutlet weak var MenuDJProfile: UIButton!
-      @IBOutlet weak var MenuReturnPlayer: UIButton!
-      @IBOutlet weak var MenuSearch: UISearchBar!
-      @IBOutlet weak var MenuMenu: UIButton!
-    @IBOutlet weak var AlbumCover: UIView!
-      @IBOutlet weak var PlayButton: UIButton!
-      @IBOutlet weak var AlbumImage: UIImageView!
-    @IBOutlet weak var DJProfiles: UIView!
-      @IBOutlet weak var ListDJs: UITableView!
-    @IBOutlet weak var PlaylistDiscussion: UIView!
-      @IBOutlet weak var Playlist: UIButton!
-      @IBOutlet weak var Discussion: UIButton!
     @IBOutlet weak var SearchResults: UIView!
-      @IBOutlet weak var SearchDJProf: UIView!
-          @IBOutlet weak var SearchDJList: UITableView!
-        @IBOutlet weak var RadioShowList: UITableView!
-      @IBOutlet weak var SearchOptionTitles: UIView!
-        @IBOutlet weak var RadioShowTitle: UILabel!
-        @IBOutlet weak var DJProfileTitle: UILabel!
-      @IBOutlet weak var DJProfText: UILabel!
-      @IBOutlet weak var DJBackgroundImage: UIImageView!
-    
+    @IBOutlet weak var RadioShows: UIView!
+    @IBOutlet weak var DJProfiles: UIView!
     @IBOutlet weak var DJProfile: UIView!
-    @IBOutlet weak var Month: UIView!
+    @IBOutlet weak var MonthlyView: UIView!
+    @IBOutlet weak var Month: UITableView!
+    @IBOutlet weak var NavigationBar: UINavigationBar!
+    @IBOutlet weak var AlbumCover: UIView!
+    
+    
+    
     
     
     
@@ -239,7 +216,6 @@ class MainView: UIViewController {
             self.NavigationBar.topItem?.title = "Calendar"
         }
     }
-    
     
     
     override func viewDidLoad() {

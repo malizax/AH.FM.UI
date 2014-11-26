@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4j-H9-IxG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="q4j-H9-IxG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sy4-7N-wvs" userLabel="Song Title">
-                                        <rect key="frame" x="150" y="50" width="200" height="50"/>
+                                        <rect key="frame" x="75" y="50" width="200" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="2MS-23-SfK"/>
                                             <constraint firstAttribute="height" constant="50" id="Wds-s6-Lyf"/>
@@ -31,7 +32,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlY-jN-7r9" userLabel="Artist Name">
-                                        <rect key="frame" x="150" y="25" width="200" height="25"/>
+                                        <rect key="frame" x="75" y="25" width="200" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Xdr-pi-jXn"/>
                                             <constraint firstAttribute="width" constant="200" id="yPl-s9-JAn"/>
@@ -43,14 +44,16 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="hhY-eL-AGR" secondAttribute="height" multiplier="6:1" id="9aY-is-3YF"/>
                                     <constraint firstAttribute="bottom" secondItem="Sy4-7N-wvs" secondAttribute="bottom" id="EbB-A3-2zt"/>
-                                    <constraint firstAttribute="height" constant="100" id="Hda-nW-ZzB"/>
                                     <constraint firstItem="dlY-jN-7r9" firstAttribute="top" secondItem="hhY-eL-AGR" secondAttribute="top" constant="25" id="SQb-Lt-aC1"/>
-                                    <constraint firstAttribute="width" constant="600" id="gyP-4j-tpN"/>
                                     <constraint firstItem="Sy4-7N-wvs" firstAttribute="top" secondItem="dlY-jN-7r9" secondAttribute="bottom" id="isz-NN-62Q"/>
-                                    <constraint firstItem="dlY-jN-7r9" firstAttribute="leading" secondItem="hhY-eL-AGR" secondAttribute="leading" constant="150" id="m6T-J2-4N3"/>
-                                    <constraint firstItem="Sy4-7N-wvs" firstAttribute="leading" secondItem="hhY-eL-AGR" secondAttribute="leading" constant="150" id="v7e-FP-N8V"/>
+                                    <constraint firstItem="dlY-jN-7r9" firstAttribute="leading" secondItem="hhY-eL-AGR" secondAttribute="leading" constant="75" id="m6T-J2-4N3"/>
+                                    <constraint firstItem="Sy4-7N-wvs" firstAttribute="leading" secondItem="hhY-eL-AGR" secondAttribute="leading" constant="75" id="v7e-FP-N8V"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="300" width="400" height="100"/>
+                                </variation>
                             </view>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Roc-Vl-FkG">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
@@ -71,6 +74,9 @@
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-200" width="400" height="50"/>
+                                </variation>
                             </navigationBar>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vER-Ze-KOu" userLabel="Radio Shows">
                                 <rect key="frame" x="0.0" y="50" width="600" height="400"/>
@@ -109,6 +115,9 @@
                                     <constraint firstAttribute="trailing" secondItem="j8G-zG-yQm" secondAttribute="trailing" id="raC-iI-WaV"/>
                                     <constraint firstAttribute="width" constant="600" id="yM4-lT-kxD"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-150" width="600" height="400"/>
+                                </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQJ-Tc-Jq9" userLabel="Menu Popover">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
@@ -207,6 +216,9 @@
                                     <constraint firstAttribute="centerX" secondItem="2at-8R-P0z" secondAttribute="centerX" id="udk-Tu-AOD"/>
                                     <constraint firstItem="Lcv-iM-Oxi" firstAttribute="top" secondItem="wQJ-Tc-Jq9" secondAttribute="top" constant="7" id="y2w-9n-ZKV"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-200" width="600" height="450"/>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbt-ll-g7l" userLabel="Album Cover">
                                 <rect key="frame" x="0.0" y="50" width="600" height="400"/>
@@ -220,6 +232,9 @@
                                         <state key="normal" title="Play">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <variation key="heightClass=compact-widthClass=compact" ambiguous="YES">
+                                            <rect key="frame" x="177" y="185" width="46" height="30"/>
+                                        </variation>
                                         <connections>
                                             <action selector="PlayButtonDidPress:" destination="q4j-H9-IxG" eventType="touchUpInside" id="cQn-Gl-Uxl"/>
                                         </connections>
@@ -241,6 +256,9 @@
                                     <constraint firstAttribute="centerX" secondItem="ctG-lW-iNn" secondAttribute="centerX" id="qT9-OC-pho"/>
                                     <constraint firstAttribute="centerY" secondItem="ctG-lW-iNn" secondAttribute="centerY" id="uA6-Ow-QXi"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-150" width="400" height="400"/>
+                                </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO1-o0-ld3" userLabel="DJ Profiles">
                                 <rect key="frame" x="0.0" y="50" width="600" height="400"/>
@@ -282,39 +300,9 @@
                                     <constraint firstAttribute="width" constant="600" id="nGP-lJ-rDc"/>
                                     <constraint firstItem="MqZ-VZ-3EE" firstAttribute="top" secondItem="SO1-o0-ld3" secondAttribute="top" id="uLD-Hg-AIy"/>
                                 </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wy-TP-7Qs" userLabel="Playlist/Discussion">
-                                <rect key="frame" x="0.0" y="450" width="600" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-YO-Uwu">
-                                        <rect key="frame" x="175" y="10" width="49" height="30"/>
-                                        <state key="normal" title="Playlist">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="PlaylistButtonDidPress:" destination="q4j-H9-IxG" eventType="touchUpInside" id="CEL-LO-NA6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljw-c3-gkb">
-                                        <rect key="frame" x="350" y="10" width="75" height="30"/>
-                                        <state key="normal" title="Discussion">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="DiscussionButtonDidPress:" destination="q4j-H9-IxG" eventType="touchUpInside" id="NIr-5V-rNM"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="ljw-c3-gkb" secondAttribute="trailing" constant="175" id="1J0-r9-nSa"/>
-                                    <constraint firstItem="uDi-YO-Uwu" firstAttribute="leading" secondItem="1wy-TP-7Qs" secondAttribute="leading" constant="175" id="FeG-KZ-aCU"/>
-                                    <constraint firstAttribute="bottom" secondItem="ljw-c3-gkb" secondAttribute="bottom" constant="10" id="ITB-ZH-UJi"/>
-                                    <constraint firstAttribute="bottom" secondItem="uDi-YO-Uwu" secondAttribute="bottom" constant="10" id="SRd-xI-t6U"/>
-                                    <constraint firstItem="uDi-YO-Uwu" firstAttribute="top" secondItem="1wy-TP-7Qs" secondAttribute="top" constant="10" id="Zf6-8b-A0t"/>
-                                    <constraint firstAttribute="height" constant="50" id="e0w-FU-ThN"/>
-                                    <constraint firstItem="ljw-c3-gkb" firstAttribute="top" secondItem="1wy-TP-7Qs" secondAttribute="top" constant="10" id="mQZ-eF-aYg"/>
-                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-150" width="600" height="400"/>
+                                </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qv-Gm-ycN" userLabel="Search Results">
                                 <rect key="frame" x="0.0" y="50" width="600" height="400"/>
@@ -431,6 +419,9 @@
                                     <constraint firstAttribute="trailing" secondItem="4an-9l-eaN" secondAttribute="trailing" id="if9-Ew-Rm2"/>
                                     <constraint firstAttribute="trailing" secondItem="3Hv-bV-xT7" secondAttribute="trailing" id="lIB-lQ-sXg"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-150" width="600" height="400"/>
+                                </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZBL-ZZ-HDR" userLabel="DJ Profile">
                                 <rect key="frame" x="0.0" y="50" width="600" height="400"/>
@@ -458,6 +449,9 @@
                                     <constraint firstItem="5a3-kP-2vo" firstAttribute="top" secondItem="HSb-XU-jYp" secondAttribute="bottom" id="u7k-mO-efV"/>
                                     <constraint firstItem="HSb-XU-jYp" firstAttribute="top" secondItem="ZBL-ZZ-HDR" secondAttribute="top" id="whX-VI-s4D"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-150" width="600" height="400"/>
+                                </variation>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gqb-Lc-2tq" userLabel="Monthly View">
                                 <rect key="frame" x="0.0" y="50" width="600" height="400"/>
@@ -478,6 +472,53 @@
                                     <constraint firstAttribute="width" constant="600" id="r7R-nH-yau"/>
                                     <constraint firstAttribute="height" constant="400" id="rYm-Pq-2H0"/>
                                 </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="-150" width="600" height="400"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wy-TP-7Qs" userLabel="Playlist/Discussion">
+                                <rect key="frame" x="0.0" y="450" width="600" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDi-YO-Uwu">
+                                        <rect key="frame" x="75" y="10" width="150" height="30"/>
+                                        <state key="normal" title="Playlist">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="175" y="10" width="49" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="PlaylistButtonDidPress:" destination="q4j-H9-IxG" eventType="touchUpInside" id="CEL-LO-NA6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljw-c3-gkb">
+                                        <rect key="frame" x="375" y="10" width="150" height="30"/>
+                                        <state key="normal" title="Discussion">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="350" y="10" width="75" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="DiscussionButtonDidPress:" destination="q4j-H9-IxG" eventType="touchUpInside" id="NIr-5V-rNM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ljw-c3-gkb" secondAttribute="bottom" constant="10" id="ITB-ZH-UJi"/>
+                                    <constraint firstAttribute="width" secondItem="1wy-TP-7Qs" secondAttribute="height" multiplier="12:1" id="PPc-17-KLY"/>
+                                    <constraint firstAttribute="bottom" secondItem="uDi-YO-Uwu" secondAttribute="bottom" constant="10" id="SRd-xI-t6U"/>
+                                    <constraint firstItem="uDi-YO-Uwu" firstAttribute="leading" secondItem="1wy-TP-7Qs" secondAttribute="leading" constant="75" id="Xk9-PM-3WY"/>
+                                    <constraint firstItem="uDi-YO-Uwu" firstAttribute="top" secondItem="1wy-TP-7Qs" secondAttribute="top" constant="10" id="Zf6-8b-A0t"/>
+                                    <constraint firstItem="uDi-YO-Uwu" firstAttribute="width" secondItem="ljw-c3-gkb" secondAttribute="width" id="aSQ-5L-wdL"/>
+                                    <constraint firstAttribute="trailing" secondItem="ljw-c3-gkb" secondAttribute="trailing" constant="75" id="iDm-Nq-dw4"/>
+                                    <constraint firstItem="ljw-c3-gkb" firstAttribute="top" secondItem="1wy-TP-7Qs" secondAttribute="top" constant="10" id="mQZ-eF-aYg"/>
+                                    <constraint firstItem="ljw-c3-gkb" firstAttribute="leading" secondItem="uDi-YO-Uwu" secondAttribute="trailing" constant="150" id="xJc-6d-qeG"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="250" width="400" height="50"/>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -506,6 +547,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="wQJ-Tc-Jq9" secondAttribute="trailing" constant="-16" id="QB3-Sq-6wb"/>
                             <constraint firstItem="Zbt-ll-g7l" firstAttribute="top" secondItem="Roc-Vl-FkG" secondAttribute="bottom" id="QES-tM-1vA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SO1-o0-ld3" secondAttribute="trailing" constant="-16" id="UHs-wT-900"/>
+                            <constraint firstItem="BG2-3p-FIo" firstAttribute="top" secondItem="hhY-eL-AGR" secondAttribute="bottom" id="Zy9-as-BIE"/>
                             <constraint firstItem="ZBL-ZZ-HDR" firstAttribute="leading" secondItem="pIx-Uw-1bK" secondAttribute="leadingMargin" constant="-16" id="b0t-zZ-ksD"/>
                             <constraint firstItem="wQJ-Tc-Jq9" firstAttribute="top" secondItem="pIx-Uw-1bK" secondAttribute="topMargin" id="cKh-Az-7zZ"/>
                             <constraint firstItem="ZBL-ZZ-HDR" firstAttribute="top" secondItem="Roc-Vl-FkG" secondAttribute="bottom" id="cnB-8e-BM0"/>
@@ -517,10 +559,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="vER-Ze-KOu" secondAttribute="trailing" constant="-16" id="kTW-bw-UVm"/>
                             <constraint firstItem="SO1-o0-ld3" firstAttribute="leading" secondItem="pIx-Uw-1bK" secondAttribute="leadingMargin" constant="-16" id="mNY-LS-ZRq"/>
                             <constraint firstItem="1wy-TP-7Qs" firstAttribute="width" secondItem="pIx-Uw-1bK" secondAttribute="width" id="nlt-P6-c0M"/>
+                            <constraint firstAttribute="centerX" secondItem="1wy-TP-7Qs" secondAttribute="centerX" id="npf-Wi-yKQ"/>
                             <constraint firstItem="1wy-TP-7Qs" firstAttribute="top" secondItem="Zbt-ll-g7l" secondAttribute="bottom" id="oH5-0p-TtZ"/>
                             <constraint firstItem="7qv-Gm-ycN" firstAttribute="top" secondItem="Roc-Vl-FkG" secondAttribute="bottom" id="pVm-aS-SOV"/>
                             <constraint firstItem="1wy-TP-7Qs" firstAttribute="top" secondItem="wQJ-Tc-Jq9" secondAttribute="bottom" id="qWQ-h7-96d"/>
-                            <constraint firstItem="1wy-TP-7Qs" firstAttribute="top" secondItem="Gqb-Lc-2tq" secondAttribute="bottom" id="qrt-Xx-7rZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZBL-ZZ-HDR" secondAttribute="trailing" constant="-16" id="uGI-dm-rLV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gqb-Lc-2tq" secondAttribute="trailing" constant="-16" id="wR3-D9-Ekc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Roc-Vl-FkG" secondAttribute="trailing" constant="-16" id="x6A-ex-PXg"/>
@@ -544,51 +586,15 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="AlbumCover" destination="Zbt-ll-g7l" id="ahF-fF-jpg"/>
-                        <outlet property="AlbumImage" destination="wRe-6r-MBM" id="A0r-aK-EcR"/>
-                        <outlet property="ArtistName" destination="dlY-jN-7r9" id="Q5q-Ha-gVG"/>
-                        <outlet property="DJBackgroundImage" destination="HSb-XU-jYp" id="QOP-4R-RVu"/>
-                        <outlet property="DJProfText" destination="5a3-kP-2vo" id="8MJ-6y-f2z"/>
-                        <outlet property="DJProfile" destination="ZBL-ZZ-HDR" id="NJF-M8-ekb"/>
-                        <outlet property="DJProfileTitle" destination="sMk-Dr-vLO" id="45L-BI-uvO"/>
-                        <outlet property="DJProfiles" destination="SO1-o0-ld3" id="dSz-Dp-ViW"/>
-                        <outlet property="DJProflie" destination="ZBL-ZZ-HDR" id="fRL-Cc-EIC"/>
-                        <outlet property="DJSearch" destination="MqZ-VZ-3EE" id="UcP-om-Pkx"/>
-                        <outlet property="Discussion" destination="ljw-c3-gkb" id="tkK-Vo-OX1"/>
-                        <outlet property="ListDJs" destination="Il9-wq-ggQ" id="acK-ft-hZQ"/>
-                        <outlet property="MenuCalendar" destination="62W-DM-YFy" id="Zlr-XO-3U3"/>
-                        <outlet property="MenuDJProfile" destination="wwQ-sz-L0g" id="wbv-Hq-Cch"/>
-                        <outlet property="MenuMenu" destination="Lcv-iM-Oxi" id="6Cy-Ii-jWn"/>
-                        <outlet property="MenuPopover" destination="wQJ-Tc-Jq9" id="Rn1-0Q-7DX"/>
-                        <outlet property="MenuRadioShows" destination="BGh-ef-WUr" id="KJS-Sm-Np4"/>
-                        <outlet property="MenuReturnPlayer" destination="2at-8R-P0z" id="Xlh-cj-3Wh"/>
-                        <outlet property="MenuSearch" destination="ml5-Ny-ry6" id="UU7-qQ-ohi"/>
-                        <outlet property="Month" destination="Gqb-Lc-2tq" id="WsN-EL-gUv"/>
-                        <outlet property="NavBarMenu" destination="o9J-2q-4bv" id="w0m-07-JoY"/>
-                        <outlet property="NavBarSearch" destination="JdG-0O-4Ts" id="5mK-rG-FxD"/>
-                        <outlet property="NavigationBar" destination="Roc-Vl-FkG" id="Sad-40-bU3"/>
-                        <outlet property="NowPlaying" destination="hhY-eL-AGR" id="bit-Ld-Dii"/>
-                        <outlet property="PlayButton" destination="ctG-lW-iNn" id="fu3-0N-cgo"/>
-                        <outlet property="Playlist" destination="uDi-YO-Uwu" id="hwP-ME-9c8"/>
-                        <outlet property="PlaylistDiscussion" destination="1wy-TP-7Qs" id="idv-5e-NhV"/>
-                        <outlet property="RadioSearchTitles" destination="xME-eH-GLy" id="x8h-Vm-U7C"/>
-                        <outlet property="RadioShowList" destination="bVv-1Q-JP2" id="mwH-1h-THx"/>
-                        <outlet property="RadioShowTitle" destination="ATZ-6g-fpB" id="1JT-eT-DsV"/>
-                        <outlet property="RadioShows" destination="vER-Ze-KOu" id="h2O-3n-grD"/>
-                        <outlet property="RadioShowsButtonDidPress" destination="BGh-ef-WUr" id="KoZ-pV-u9s"/>
-                        <outlet property="RadioShowsLabel" destination="ATZ-6g-fpB" id="Yxa-yy-nfG"/>
-                        <outlet property="SearchBar" destination="j8G-zG-yQm" id="Ynd-ex-EQw"/>
-                        <outlet property="SearchDJList" destination="FU1-2q-hap" id="YZ6-GY-Y7Q"/>
-                        <outlet property="SearchDJProf" destination="3Hv-bV-xT7" id="NCd-gc-RXS"/>
-                        <outlet property="SearchDJProfList" destination="FU1-2q-hap" id="wyT-le-7GC"/>
-                        <outlet property="SearchOptionTitles" destination="xME-eH-GLy" id="fq6-Sn-ojF"/>
-                        <outlet property="SearchResultTitleDJLabel" destination="sMk-Dr-vLO" id="fk0-ro-ztn"/>
-                        <outlet property="SearchResults" destination="7qv-Gm-ycN" id="iK1-hZ-Crt"/>
-                        <outlet property="SearchResultsDJProf" destination="3Hv-bV-xT7" id="71a-MF-PQZ"/>
-                        <outlet property="SearchResultsRadioShow" destination="7qv-Gm-ycN" id="j9l-sn-GHk"/>
-                        <outlet property="SongTitle" destination="Sy4-7N-wvs" id="hI6-mZ-Y7v"/>
-                        <outlet property="listOfShows" destination="k6p-E8-9kn" id="Gtd-Mx-KQL"/>
-                        <outlet property="navBar" destination="Roc-Vl-FkG" id="bmc-be-4d0"/>
+                        <outlet property="AlbumCover" destination="Zbt-ll-g7l" id="iIp-yZ-jLa"/>
+                        <outlet property="DJProfile" destination="ZBL-ZZ-HDR" id="u2Y-ir-MCB"/>
+                        <outlet property="DJProfiles" destination="SO1-o0-ld3" id="8A0-ia-LUV"/>
+                        <outlet property="MenuPopover" destination="wQJ-Tc-Jq9" id="qB5-rV-3nw"/>
+                        <outlet property="Month" destination="6cK-cZ-T9k" id="pM4-me-eSG"/>
+                        <outlet property="MonthlyView" destination="Gqb-Lc-2tq" id="fNu-pQ-Dmw"/>
+                        <outlet property="NavigationBar" destination="Roc-Vl-FkG" id="gJH-Mc-JZh"/>
+                        <outlet property="RadioShows" destination="vER-Ze-KOu" id="Wei-lm-FYS"/>
+                        <outlet property="SearchResults" destination="7qv-Gm-ycN" id="yQu-14-Ev1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiZ-T1-e6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
