@@ -1,0 +1,48 @@
+
+/* Class = "IBUIButton"; normalTitle = "Return Player"; ObjectID = "2at-8R-P0z"; */
+"2at-8R-P0z.normalTitle" = "Return Player";
+
+/* Class = "IBUILabel"; text = "This will be text descibing the DJ you are looking at."; ObjectID = "5a3-kP-2vo"; */
+"5a3-kP-2vo.text" = "This will be text descibing the DJ you are looking at.";
+
+/* Class = "IBUIButton"; normalTitle = "Calender"; ObjectID = "62W-DM-YFy"; */
+"62W-DM-YFy.normalTitle" = "Calender";
+
+/* Class = "IBUILabel"; text = "Radio Shows"; ObjectID = "ATZ-6g-fpB"; */
+"ATZ-6g-fpB.text" = "Radio Shows";
+
+/* Class = "IBUIButton"; normalTitle = "Radio Shows"; ObjectID = "BGh-ef-WUr"; */
+"BGh-ef-WUr.normalTitle" = "Radio Shows";
+
+/* Class = "IBUINavigationItem"; title = "Status"; ObjectID = "CcS-To-PVO"; */
+"CcS-To-PVO.title" = "Status";
+
+/* Class = "IBUIBarButtonItem"; title = "Search"; ObjectID = "JdG-0O-4Ts"; */
+"JdG-0O-4Ts.title" = "Search";
+
+/* Class = "IBUIButton"; normalTitle = "Menu"; ObjectID = "Lcv-iM-Oxi"; */
+"Lcv-iM-Oxi.normalTitle" = "Menu";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Sy4-7N-wvs"; */
+"Sy4-7N-wvs.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Play"; ObjectID = "ctG-lW-iNn"; */
+"ctG-lW-iNn.normalTitle" = "Play";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "dlY-jN-7r9"; */
+"dlY-jN-7r9.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Discussion"; ObjectID = "ljw-c3-gkb"; */
+"ljw-c3-gkb.normalTitle" = "Discussion";
+
+/* Class = "IBUIBarButtonItem"; title = "Menu"; ObjectID = "o9J-2q-4bv"; */
+"o9J-2q-4bv.title" = "Menu";
+
+/* Class = "IBUILabel"; text = "DJ Profiles"; ObjectID = "sMk-Dr-vLO"; */
+"sMk-Dr-vLO.text" = "DJ Profiles";
+
+/* Class = "IBUIButton"; normalTitle = "Playlist"; ObjectID = "uDi-YO-Uwu"; */
+"uDi-YO-Uwu.normalTitle" = "Playlist";
+
+/* Class = "IBUIButton"; normalTitle = "DJ Profiles"; ObjectID = "wwQ-sz-L0g"; */
+"wwQ-sz-L0g.normalTitle" = "DJ Profiles";
