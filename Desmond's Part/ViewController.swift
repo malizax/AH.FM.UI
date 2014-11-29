@@ -28,9 +28,16 @@ class MainView: UIViewController {
     @IBAction func MenuButtonDidPress(sender: AnyObject) {
         if (self.MenuPopover.hidden == true) {
             showMenuPopover()
+            hideAlbumCover()
+            hideNavigationBar()
+            hideDJProfiles()
+            hideDJProfile()
+            hideRadioShows()
+            hideSearchResults()
         }
         else {
             hideMenuPopover()
+            showAlbumCover()
         }
     }
     
@@ -38,29 +45,41 @@ class MainView: UIViewController {
         if (self.SearchResults.hidden == true) {
             showSearchResults()
         }
-        else {
-            hideSearchResults()
+    }
+    
+    @IBAction func MenuPopoverMenuButtonDidPress(sender: AnyObject) {
+        if (self.MenuPopover.hidden == false) {
+            hideMenuPopover()
+            showAlbumCover()
+            showNavigationBar()
         }
     }
     
+    
     @IBAction func RadioShowsButtonDidPress(sender: AnyObject) {
         hideMenuPopover()
+        showNavigationBar()
         showRadioShows()
     }
     
     @IBAction func CalendarButtonDidPress(sender: AnyObject) {
         hideMenuPopover()
-        showMonthlyView()
+        //showMonthlyView()
     }
     
     @IBAction func DJProfilesDidPress(sender: AnyObject) {
         hideMenuPopover()
         showDJProfiles()
+        showNavigationBar()
     }
     
     @IBAction func ReturnPlayerDidPress(sender: AnyObject) {
         hideMenuPopover()
+        showNavigationBar()
+        showAlbumCover()
     }
+    
+    
     
     //not sure what to do here for the search bar
     
@@ -217,6 +236,20 @@ class MainView: UIViewController {
         }
     }
     
+    func showAlbumCover() {
+        self.AlbumCover.hidden = false
+        self.AlbumCover.alpha = 0
+        spring(0.5) {
+            self.DJProfile.alpha = 1
+        }
+    }
+    
+    func hideAlbumCover() {
+        spring(0.5) {
+            self.AlbumCover.transform = CGAffineTransformMakeTranslation(0, 0)
+            self.AlbumCover.hidden = true
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -228,7 +261,12 @@ class MainView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func hideNavigationBar() {
+        self.NavigationBar.hidden = true
+    }
+    
+    func showNavigationBar() {
+        self.NavigationBar.hidden = false
+    }
 }
-

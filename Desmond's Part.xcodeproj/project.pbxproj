@@ -18,6 +18,7 @@
 		1FF663FF1A252D9100401E38 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF663FA1A252D9100401E38 /* DesignableView.swift */; };
 		1FF664001A252D9100401E38 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF663FB1A252D9100401E38 /* Misc.swift */; };
 		1FF664011A252D9100401E38 /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF663FC1A252D9100401E38 /* SpringAnimation.swift */; };
+		3FDBD9FE1A2A4AB0006B3A8A /* RadioShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBD9FD1A2A4AB0006B3A8A /* RadioShows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		1FF663FA1A252D9100401E38 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		1FF663FB1A252D9100401E38 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		1FF663FC1A252D9100401E38 /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
+		3FDBD9FD1A2A4AB0006B3A8A /* RadioShows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioShows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				1FF663F71A252D9100401E38 /* Spring */,
 				1FF663D51A2512E700401E38 /* AppDelegate.swift */,
 				1FF663D71A2512E700401E38 /* ViewController.swift */,
+				3FDBD9FD1A2A4AB0006B3A8A /* RadioShows.swift */,
 				1FF663D91A2512E700401E38 /* Main.storyboard */,
 				1FF663DC1A2512E700401E38 /* Images.xcassets */,
 				1FF663DE1A2512E700401E38 /* LaunchScreen.xib */,
@@ -191,7 +194,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1FF663CB1A2512E700401E38 /* Build configuration list for PBXProject "Desmond's_Part" */;
+			buildConfigurationList = 1FF663CB1A2512E700401E38 /* Build configuration list for PBXProject "Desmond's Part" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,6 +244,7 @@
 				1FF664001A252D9100401E38 /* Misc.swift in Sources */,
 				1FF664011A252D9100401E38 /* SpringAnimation.swift in Sources */,
 				1FF663FF1A252D9100401E38 /* DesignableView.swift in Sources */,
+				3FDBD9FE1A2A4AB0006B3A8A /* RadioShows.swift in Sources */,
 				1FF663FE1A252D9100401E38 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -419,7 +423,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FF663CB1A2512E700401E38 /* Build configuration list for PBXProject "Desmond's_Part" */ = {
+		1FF663CB1A2512E700401E38 /* Build configuration list for PBXProject "Desmond's Part" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1FF663ED1A2512E700401E38 /* Debug */,
